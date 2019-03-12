@@ -1,0 +1,187 @@
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+/* Media queries */
+html, body {
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden; }
+
+.lato-font {
+  font-family: 'Lato', sans-serif !important; }
+
+/*Introduction page*/
+#introduction {
+  height: 100vh;
+  width: 100%; }
+  @media (max-width: 1200px) {
+    #introduction .main-text-intro {
+      font-size: 5rem; } }
+  @media (max-width: 992px) {
+    #introduction .main-text-intro {
+      font-size: 5rem; } }
+  @media (max-width: 768px) {
+    #introduction .main-text-intro {
+      font-size: 3rem; } }
+  #introduction .animation-overlay {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 10%;
+    animation: landing-animation 3s linear 0s forwards;
+    overflow: none; }
+    #introduction .animation-overlay .text-animation-intro {
+      animation: text-animation-intro 2s linear 0s forwards; }
+  #introduction .animation-overlay2 {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    height: 10%;
+    right: 0;
+    animation: landing-animation-follow 3s linear 0s forwards;
+    overflow: none; }
+    #introduction .animation-overlay2 .text-animation-intro {
+      animation: text-animation-intro 2s ease-in 0s forwards; }
+  #introduction .animation-overlay3 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1; }
+    #introduction .animation-overlay3 #start-the-tour-btn:hover {
+      background-color: #F37748; }
+
+/* About-me Page*/
+.about-me-page-sander {
+  min-height: 800px; }
+  .about-me-page-sander .header-text-section {
+    margin-bottom: 5%; }
+  .about-me-page-sander .salesforce-certificaten {
+    margin: 1rem 1rem 1rem 1rem;
+    min-height: 620px; }
+    @media (max-width: 992px) {
+      .about-me-page-sander .salesforce-certificaten {
+        margin: 1rem 1rem 1rem 1rem; } }
+  .about-me-page-sander #more-about-me {
+    height: 100%;
+    min-height: 500px;
+    margin: 1rem 1rem 1rem 1rem; }
+    @media (max-width: 1200px) {
+      .about-me-page-sander #more-about-me {
+        border-radius: 25px;
+        margin: 1rem 1rem 1rem 1rem;
+        min-height: 100px; } }
+    @media (max-width: 992px) {
+      .about-me-page-sander #more-about-me {
+        border-radius: 25px;
+        margin: 1rem 0rem 1rem 0rem;
+        min-height: 100px; } }
+  .about-me-page-sander #why-crm-admin {
+    padding: 2rem;
+    margin: 1rem 1rem 2rem 1rem;
+    height: 100%;
+    min-height: 300px; }
+    @media (min-width: 992px) {
+      .about-me-page-sander #why-crm-admin {
+        min-height: 580px; } }
+    @media (max-width: 992px) {
+      .about-me-page-sander #why-crm-admin {
+        margin: 1rem 1rem 1rem 1rem; } }
+    @media (max-width: 1200px) {
+      .about-me-page-sander #why-crm-admin {
+        min-height: 630px; } }
+  .about-me-page-sander #why-web-develop {
+    padding: 2rem;
+    margin: 1rem 1rem 2rem 1rem;
+    height: 100%;
+    min-height: 300px; }
+    @media (min-width: 992px) {
+      .about-me-page-sander #why-web-develop {
+        min-height: 580px; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .about-me-page-sander #why-web-develop {
+      min-height: 630px; } }
+
+  .about-me-page-sander .about-salesforce-right {
+    position: fixed;
+    right: 0;
+    top: 40%;
+    z-index: 20; }
+  .about-me-page-sander .personal-picture {
+    border-radius: 50%;
+    max-height: 500px;
+    border: solid 5px #0BC9CD; }
+    @media (max-width: 992px) {
+      .about-me-page-sander .personal-picture {
+        border-radius: 25px; } }
+
+#experience-section {
+  padding: 5% 0 5% 0; }
+  #experience-section .header-text-section {
+    margin-bottom: 5%; }
+  #experience-section #crm-experience {
+    margin: 0 0 2rem 0; }
+  #experience-section #sales-experience {
+    margin: 0 0 2rem 0; }
+
+#contact-section {
+  padding: 5%; }
+  @media (max-width: 992px) {
+    #contact-section .contact-section-responsive-text {
+      font-size: 1.5rem; } }
+
+/* Overige */
+.picture-blue {
+  background: url("../img/b-blue-ocean-5412.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 400px;
+  padding: 0; }
+
+/* Custom styling elements */
+.border-radius-custom {
+  border-radius: 30px; }
+
+@media (max-width: 992px) {
+  .responsive-align-center {
+    text-align: center; } }
+
+@media (max-width: 992px) {
+  .header-text-section {
+    font-size: 4rem; } }
+@media (max-width: 576px) {
+  .header-text-section {
+    font-size: 3rem; } }
+
+/* Animations CUSTOM! */
+@keyframes landing-animation {
+  0% {
+    opacity: 1;
+    width: 100%; }
+  80% {
+    opacity: 1;
+    width: 50%;
+    height: 10%; }
+  100% {
+    opacity: 1;
+    width: 50%;
+    height: 20%; } }
+@keyframes landing-animation-follow {
+  0% {
+    opacity: 1; }
+  80% {
+    height: 10%;
+    opacity: 1; }
+  100% {
+    height: 20%;
+    width: 50%;
+    opacity: 1; } }
+@keyframes text-animation-intro {
+  0% {
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
