@@ -52,6 +52,7 @@ html, body {
 
 /* About-me Page*/
 .about-me-page-sander {
+  background-color: #1481BA;
   min-height: 800px; }
   .about-me-page-sander .header-text-section {
     margin-bottom: 5%; }
